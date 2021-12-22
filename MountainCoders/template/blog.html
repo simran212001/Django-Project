@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+{% block body %}
+
+<div class="container my-3">
+
+    <h1>Welcome to my blog page</h1>
+    <div class="row">
+
+        {% for blog in blogs %}
+        {% comment %} {{blog.title}} {% endcomment %}
+        <div class="media">
+            <div class="media-body">
+              <h5 class="mt-0">{{blog.title}}</h5>
+              {{blog.content}}
+            </div>
+          </div>
+        <br>
+        {% endfor %}
+    </div>
+
+
+</div>
+
+
+{% endblock body %}
