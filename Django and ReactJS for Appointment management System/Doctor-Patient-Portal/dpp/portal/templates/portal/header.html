@@ -1,0 +1,25 @@
+
+<!doctype html>
+<head>
+  {% load static %}  
+  {% load index %}
+  {% load placeholder %}
+  <link rel="stylesheet" type="text/css" href="{% static 'portal/css/hw2.css' %}">
+  <title>DPP</title>
+  <style>
+     
+#homeview{
+	background: #00ffff;
+}
+  </style>
+</head>
+<body>
+  {% include "portal/includes/navbar.html" %}
+  {% include "portal/includes/messages.html" %}
+  
+  {% block content %}
+  {% endblock %}
+  
+  {% block dsearch %}
+  {% endblock %}
+</body>
